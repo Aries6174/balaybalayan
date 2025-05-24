@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useContext } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from './components/MainPage';
 import Navbar from './components/Navbar';
 import LoginUser from './components/login/LoginUser';
