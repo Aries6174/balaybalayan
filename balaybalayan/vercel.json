@@ -3,11 +3,8 @@
   "outputDirectory": "build",
   "framework": "create-react-app",
   "routes": [
-    { "src": "^/static/(.*)", "dest": "/static/$1" },
-    { "src": "^/favicon.ico", "dest": "/favicon.ico" },
-    { "src": "^/manifest.json", "dest": "/manifest.json" },
-    { "src": "^/(.*)js", "dest": "/$1js" },
-    { "src": "^/(.*)css", "dest": "/$1css" },
-    { "src": ".*", "dest": "/index.html" }
+    { "handle": "filesystem" },
+    { "src": "/static/(.*)", "dest": "/static/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
